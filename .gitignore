@@ -140,5 +140,4 @@ Desktop.ini
 .eslintcache
 /.idea/
 
-!/src/main/resources/application-mysql-inventory-local.properties
-!/.gitignore
+./src/main/resources/application-mysql-inventory-local.properties
