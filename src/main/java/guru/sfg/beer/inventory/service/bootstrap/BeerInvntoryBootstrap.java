@@ -14,7 +14,7 @@ import java.util.UUID;
  */
 @Slf4j
 @RequiredArgsConstructor
-//@Component
+@Component
 public class BeerInvntoryBootstrap implements CommandLineRunner {
     public static final String BEER_1_UPC = "0631234200036";
     public static final String BEER_2_UPC = "0631234300019";
@@ -54,6 +54,7 @@ public class BeerInvntoryBootstrap implements CommandLineRunner {
                 .quantityOnHand(50)
                 .build());
 
-        log.debug("Loaded Inventory. Record count: " + beerInventoryRepository.count());
+        System.out.println("Loaded Inventory. Record count:" + beerInventoryRepository.count());
+//        log.debug("Loaded Inventory. Record count: " + beerInventoryRepository.count());
     }
 }
